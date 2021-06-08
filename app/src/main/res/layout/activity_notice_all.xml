@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ll_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_page_main"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <include layout="@layout/include_head_normal" />
+
+    <com.sz.apollo.ui.views.MyRefreshLayout
+        android:id="@+id/refreshLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ListView
+            android:id="@+id/lv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dimen_43px"
+            android:layout_marginTop="@dimen/dimen_50px"
+            android:layout_marginRight="@dimen/dimen_43px"
+            android:divider="@color/color_line"
+            android:dividerHeight="1px"
+            android:scrollbars="none" />
+    </com.sz.apollo.ui.views.MyRefreshLayout>
+
+    <include layout="@layout/layout_empty" />
+</LinearLayout>

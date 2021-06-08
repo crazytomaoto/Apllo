@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="solid_line_style">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/d1</item>
+        <item name="android:background">@color/ff_to_131</item>
+        <item name="android:src">@color/line_color</item>
+    </style>
+
+    <style name="solid_line_style_pd15">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/d1</item>
+        <item name="android:paddingRight">@dimen/d15</item>
+        <item name="android:paddingLeft">@dimen/d15</item>
+        <item name="android:background">@color/ff_to_131</item>
+        <item name="android:src">@color/f2f_to_061</item>
+    </style>
+    <style name="solid_line_style_pd152">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/d1</item>
+        <item name="android:paddingRight">@dimen/d15</item>
+        <item name="android:paddingLeft">@dimen/d15</item>
+        <item name="android:src">@color/color_f2f_70723</item>
+    </style>
+    <style name="solid_line_style_pd10">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/d1</item>
+        <item name="android:paddingRight">@dimen/d10</item>
+        <item name="android:paddingLeft">@dimen/d10</item>
+        <item name="android:background">@color/ff_to_131</item>
+        <item name="android:src">@color/f2f_to_061</item>
+    </style>
+
+    <style name="height_line_style_15">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/d15</item>
+        <item name="android:background">@color/ff_to_131</item>
+        <item name="android:src">@color/f2f_to_061</item>
+    </style>
+
+    <style name="height_line_style_10">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/d10</item>
+        <item name="android:background">@color/ff_to_131</item>
+        <item name="android:src">@color/f2f_to_061</item>
+    </style>
+
+    <!--以上是线条-->
+    <!--LinearLayout FrameLayout RelativeLayout-->
+    <style name="layout_widget_style">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">@drawable/theme_layout_bg</item>
+    </style>
+    <!-- editText -->
+    <style name="edit_widget_style">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">@dimen/d14</item>
+        <item name="android:textCursorDrawable">@drawable/common_cursor</item>
+        <item name="android:textColorHint">@color/color_dd</item>
+        <item name="android:textColor">@color/color_66</item>
+        <item name="android:background">@color/color_000</item>
+        <item name="android:paddingBottom">@dimen/d12</item>
+        <item name="android:paddingLeft">@dimen/d10</item>
+        <item name="android:paddingRight">@dimen/d10</item>
+        <item name="android:paddingTop">@dimen/d12</item>
+    </style>
+
+    <style name="edit_widget_style_w">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:textSize">@dimen/d14</item>
+        <item name="android:textCursorDrawable">@drawable/common_cursor</item>
+        <item name="android:textColorHint">@color/color_dd</item>
+        <item name="android:textColor">@color/color_66</item>
+        <item name="android:background">@color/color_000</item>
+        <item name="android:paddingBottom">@dimen/d12</item>
+        <item name="android:paddingLeft">@dimen/d10</item>
+        <item name="android:paddingRight">@dimen/d10</item>
+        <item name="android:paddingTop">@dimen/d12</item>
+    </style>
+
+    <!-- textView -->
+    <style name="text_widget_style">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:gravity">center</item>
+        <item name="android:paddingBottom">@dimen/d12</item>
+        <item name="android:paddingLeft">@dimen/d12</item>
+        <item name="android:paddingRight">@dimen/d12</item>
+        <item name="android:paddingTop">@dimen/d12</item>
+        <item name="android:textColor">@color/color_33</item>
+        <item name="android:textSize">@dimen/d15</item>
+    </style>
+
+    <!-- 通用按钮控件·样式 -->
+    <style name="btn_widget_style">
+        <item name="android:layout_width">@dimen/d290</item>
+        <item name="android:layout_height">@dimen/d45</item>
+        <item name="android:background">@drawable/theme_btn_bg</item>
+        <item name="android:gravity">center</item>
+        <item name="android:text">@string/app_qd</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:textColor">@color/color_ff</item>
+        <item name="android:textSize">@dimen/d15</item>
+    </style>
+
+    <style name="btn_widget_style_176">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/d50</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:background">@color/color_176</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:textColor">@color/color_ff</item>
+        <item name="android:textSize">@dimen/d15</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:visibility">visible</item>
+    </style>
+
+    <!-- 通用短信控件·样式 -->
+    <style name="sms_widget_style">
+        <item name="android:layout_width">@dimen/d90</item>
+        <item name="android:layout_height">@dimen/d30</item>
+        <item name="android:background">@drawable/theme_sms_bg</item>
+        <item name="android:gravity">center</item>
+        <item name="android:text">@string/str_fsyzm</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:textColor">@color/color_ff</item>
+        <item name="android:textSize">@dimen/d13</item>
+    </style>
+
+    <style name="spacing_10_style">
+        <item name="android:src">@color/color_f2f</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/d10</item>
+    </style>
+
+</resources>

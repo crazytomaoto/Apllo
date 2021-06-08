@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/page_color3"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <include layout="@layout/include_head_normal" />
+
+    <com.sz.apollo.ui.views.MyRefreshLayout
+        android:id="@+id/refreshLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="376px"
+                android:layout_marginLeft="@dimen/dimen_42px"
+                android:layout_marginTop="@dimen/dimen_72px"
+                android:layout_marginRight="@dimen/dimen_46px"
+                android:layout_marginBottom="@dimen/dimen_60px"
+                android:background="@drawable/bg_nbo">
+
+                <TextView
+                    android:id="@+id/tv_theme"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dimen_48px"
+                    android:layout_marginTop="@dimen/dimen_46px"
+                    android:text="@string/tip216"
+                    android:textColor="@color/white2"
+                    android:textSize="@dimen/dimen_36px" />
+
+                <TextView
+                    android:id="@+id/tv_profits"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginLeft="@dimen/dimen_48px"
+                    android:layout_marginTop="@dimen/dimen_46px"
+                    android:layout_marginBottom="116px"
+                    android:text=""
+                    android:textColor="@color/white2"
+                    android:textSize="86px" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimen_46px"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="0px"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="@dimen/dimen_30px"
+                            android:layout_height="@dimen/dimen_30px"
+                            android:scaleType="centerCrop"
+                            android:src="@drawable/ic_add_blue" />
+
+                        <TextView
+                            android:id="@+id/tv_power_own"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/dimen_24px"
+                            android:text="0.00"
+                            android:textColor="@color/white2"
+                            android:textSize="@dimen/dimens_58px" />
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/dimen_24px"
+                        android:text="@string/tip217"
+                        android:textColor="@color/gray7"
+                        android:textSize="@dimen/dimen_36px" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0px"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="@dimen/dimen_30px"
+                            android:layout_height="@dimen/dimen_30px"
+                            android:scaleType="centerCrop"
+                            android:src="@drawable/ic_add_blue" />
+
+                        <TextView
+                            android:id="@+id/tv_power_push"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/dimen_24px"
+                            android:text="0.00"
+                            android:textColor="@color/white2"
+                            android:textSize="@dimen/dimens_58px" />
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/dimen_24px"
+                        android:text="@string/tip218"
+                        android:textColor="@color/gray7"
+                        android:textSize="@dimen/dimen_36px" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_miners"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dimen_42px"
+                android:layout_marginTop="@dimen/dimens_154px"
+                android:layout_marginRight="@dimen/dimen_46px"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/tip219"
+                    android:textColor="@color/white2"
+                    android:textSize="@dimen/dimen_46px" />
+
+                <ListView
+                    android:id="@+id/lv_miners"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dimen_46px"
+                    android:layout_marginBottom="@dimen/dimen_46px"
+                    android:divider="@null"
+                    android:dividerHeight="@dimen/dimens_26px"
+                    android:scrollbars="none" />
+            </LinearLayout>
+
+            <include layout="@layout/layout_empty" />
+
+        </LinearLayout>
+    </com.sz.apollo.ui.views.MyRefreshLayout>
+
+
+</LinearLayout>

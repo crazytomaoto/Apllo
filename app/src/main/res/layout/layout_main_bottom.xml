@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="142px"
+    android:background="@color/bottom_color"
+    android:fitsSystemWindows="true"
+    android:gravity="center"
+    android:orientation="horizontal">
+
+    <LinearLayout
+        android:id="@+id/ll_one"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <com.airbnb.lottie.LottieAnimationView
+            android:id="@+id/lottie_1"
+            android:layout_width="@dimen/dimen_62px"
+            android:layout_height="@dimen/dimen_50px"
+            android:scaleType="centerCrop"
+            app:lottie_fileName="iocn_tab_zichan.json" />
+
+        <TextView
+            android:id="@+id/tv_one"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/dimen_40px"
+            android:layout_marginTop="14px"
+            android:gravity="center"
+            android:text="@string/t_assets"
+            android:textColor="@color/home_text_color"
+            android:textSize="@dimen/dimen_30px"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_two"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <com.airbnb.lottie.LottieAnimationView
+            android:id="@+id/lottie_2"
+            android:layout_width="@dimen/dimen_60px"
+            android:layout_height="@dimen/dimen_62px"
+            android:scaleType="centerCrop"
+            app:lottie_fileName="iocn_tab_kuangchang.json" />
+
+        <TextView
+            android:id="@+id/tv_two"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/dimen_40px"
+            android:layout_marginTop="7px"
+            android:gravity="center"
+            android:text="@string/mining_pool"
+            android:textColor="@color/home_text_color"
+            android:textSize="@dimen/dimen_30px"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_three"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <com.airbnb.lottie.LottieAnimationView
+            android:id="@+id/lottie_3"
+            android:layout_width="@dimen/dimens_56px"
+            android:layout_height="@dimen/dimen_60px"
+            android:scaleType="centerCrop"
+            app:lottie_fileName="iocn_tab_zhangben.json" />
+
+        <TextView
+            android:id="@+id/tv_three"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/dimen_40px"
+            android:layout_marginTop="10px"
+            android:gravity="center"
+            android:text="@string/t_ledger"
+            android:textColor="@color/home_text_color"
+            android:textSize="@dimen/dimen_30px"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_four"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <com.airbnb.lottie.LottieAnimationView
+            android:id="@+id/lottie_4"
+            android:layout_width="@dimen/dimens_58px"
+            android:layout_height="@dimen/dimen_60px"
+            android:scaleType="centerCrop"
+            app:lottie_fileName="iocn_tab_wode.json" />
+
+        <TextView
+            android:id="@+id/tv_four"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/dimen_40px"
+            android:layout_marginTop="10px"
+            android:gravity="center"
+            android:text="@string/t_mine"
+            android:textColor="@color/home_text_color"
+            android:textSize="@dimen/dimen_30px"
+            android:textStyle="bold" />
+    </LinearLayout>
+</LinearLayout>

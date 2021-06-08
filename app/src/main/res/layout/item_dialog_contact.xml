@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="236px">
+
+    <ImageView
+        android:id="@+id/iv_logo"
+        android:layout_width="92px"
+        android:layout_height="92px"
+        android:layout_centerVertical="true"
+        android:src="@drawable/logo_aoc" />
+
+    <ImageView
+        android:id="@+id/iv_select"
+        android:layout_width="@dimen/dimen_50px"
+        android:layout_height="68px"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:src="@drawable/ic_select" />
+
+    <TextView
+        android:id="@+id/tv_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="78px"
+        android:layout_marginTop="@dimen/dimen_54px"
+        android:layout_toRightOf="@id/iv_logo"
+        android:text="钱包名称"
+        android:textColor="@color/white"
+        android:textSize="@dimen/dimen_60px" />
+
+    <TextView
+        android:id="@+id/tv_address"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_name"
+        android:layout_marginLeft="78px"
+        android:layout_toRightOf="@id/iv_logo"
+        android:textColor="#73768D"
+        android:text="0x1234567"
+        android:textSize="@dimen/dimen_48px" />
+</RelativeLayout>

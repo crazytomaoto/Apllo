@@ -1,0 +1,269 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_page_main"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/dimen_144px"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center"
+        android:text="@string/t_ledger"
+        android:textColor="@color/white"
+        android:textSize="@dimen/dimen_46px"
+        android:visibility="gone" />
+
+    <include layout="@layout/include_head_normal" />
+
+    <WebView
+        android:id="@+id/my_webView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layerType="software"
+        android:visibility="visible" />
+
+    <com.sz.apollo.ui.views.MyRefreshLayout
+        android:id="@+id/myRefresh"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scrollbars="none"
+            android:visibility="visible">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingBottom="@dimen/dimen_60px">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dimen_150px"
+                    android:layout_marginLeft="@dimen/dimen_43px"
+                    android:layout_marginTop="@dimen/dimen_70px"
+                    android:layout_marginRight="37px"
+                    android:background="@drawable/r_14_b_3"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:id="@+id/ll_content"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/tv_type"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="@dimen/dimen_20px"
+                            android:layout_marginRight="@dimen/dimen_20px"
+                            android:layout_toLeftOf="@id/tv_02"
+                            android:paddingRight="@dimen/dimen_10px"
+                            android:text="@string/tip158"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/dimen_40px" />
+
+                        <ImageView
+                            android:id="@+id/iv_arrow"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="33px"
+                            android:src="@drawable/ic_arrow_dowm" />
+
+                    </LinearLayout>
+
+                    <EditText
+                        android:id="@+id/ed_content"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_centerVertical="true"
+                        android:layout_weight="1"
+                        android:background="@null"
+                        android:hint="@string/tip159"
+                        android:maxLines="1"
+                        android:singleLine="true"
+                        android:textColor="@color/white"
+                        android:textColorHint="@color/gray"
+                        android:textSize="@dimen/dimen_35px" />
+
+                    <RelativeLayout
+                        android:id="@+id/rl_search"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="@dimen/dimen_20px">
+
+                        <ImageView
+                            android:layout_width="49px"
+                            android:layout_height="49px"
+                            android:src="@drawable/ic_search" />
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="490px"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="@dimen/dimen_43px">
+
+                    <com.airbnb.lottie.LottieAnimationView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="@dimen/dimen_43px"
+                        android:layout_marginRight="@dimen/dimen_43px"
+                        app:lottie_autoPlay="true"
+                        app:lottie_fileName="list_one.json"
+                        app:lottie_loop="true" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:gravity="center"
+                            android:text="@string/tip160"
+                            android:textColor="@color/gray"
+                            android:textSize="@dimen/dimen_43px" />
+
+                        <TextView
+                            android:id="@+id/tv_account_count"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="@dimen/dimen_30px"
+                            android:gravity="center"
+                            android:text="0"
+                            android:textColor="@color/white2"
+                            android:textSize="@dimen/dimen_86px"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+
+                </FrameLayout>
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="490px"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="@dimen/dimen_43px">
+
+                    <com.airbnb.lottie.LottieAnimationView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="@dimen/dimen_43px"
+                        android:layout_marginRight="@dimen/dimen_43px"
+                        app:lottie_autoPlay="true"
+                        app:lottie_fileName="list_two.json"
+                        app:lottie_loop="true" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_marginTop="118px"
+                            android:text="@string/tip161"
+                            android:textColor="@color/gray"
+                            android:textSize="@dimen/dimen_43px" />
+
+                        <TextView
+                            android:id="@+id/tv_trans_count"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_marginTop="@dimen/dimen_30px"
+                            android:text="0"
+                            android:textColor="@color/white2"
+                            android:textSize="86px"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+
+                </FrameLayout>
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="490px"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="@dimen/dimen_43px">
+
+                    <com.airbnb.lottie.LottieAnimationView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="@dimen/dimen_43px"
+                        android:layout_marginRight="@dimen/dimen_43px"
+                        app:lottie_autoPlay="true"
+                        app:lottie_fileName="list_three.json"
+                        app:lottie_loop="true" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_marginTop="118px"
+                            android:text="@string/tip162"
+                            android:textColor="@color/gray"
+                            android:textSize="@dimen/dimen_43px" />
+
+                        <TextView
+                            android:id="@+id/tv_block_height"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_marginTop="@dimen/dimen_30px"
+                            android:text="0"
+                            android:textColor="@color/white2"
+                            android:textSize="86px"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+
+                </FrameLayout>
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dimen_43px"
+                    android:layout_marginTop="@dimen/dimen_43px"
+                    android:layout_marginRight="@dimen/dimen_43px"
+                    android:background="@drawable/radius_14_gray6">
+
+                    <com.github.mikephil.charting.charts.LineChartB
+                        android:id="@+id/chart"
+                        android:layout_width="match_parent"
+                        android:layout_height="225dp"
+                        android:layout_marginBottom="@dimen/dimen_50px" />
+                </FrameLayout>
+
+            </LinearLayout>
+        </ScrollView>
+    </com.sz.apollo.ui.views.MyRefreshLayout>
+</LinearLayout>

@@ -1,0 +1,49 @@
+<resources>
+    <string name="app_start_name">NEX</string>
+    <string name="app_name">NextEx</string>
+    <string name="app_qd">Confirm</string>
+    <string name="app_qx">Cancel</string>
+    <string name="str_tab1">Home</string>
+    <string name="str_tab2">Market</string>
+    <string name="str_tab3">Trading</string>
+    <string name="str_tab4">My</string>
+    <string name="str_bccg">Saved</string>
+    <string name="str_bcsb">Failed</string>
+    <string name="str_fsyzm">Send verification code</string>
+
+    <!--Advertising-->
+    <string-array name="array_advert">
+        <item>ubmcmm.baidustatic.com</item>
+        <item>cpro2.baidustatic.com</item>
+        <item>cpro.baidustatic.com</item>
+        <item>s.lianmeng.360.cn</item>
+        <item>nsclick.baidu.com</item>
+        <item>pos.baidu.com</item>
+        <item>cbjs.baidu.com</item>
+        <item>cpro.baidu.com</item>
+        <item>images.sohu.com/cs/jsfile/js/c.js</item>
+        <item>union.sogou.com/</item>
+        <item>sogou.com/</item>
+        <item>a.baidu.com</item>
+        <item>c.baidu.com</item>
+    </string-array>
+
+    <string name="str_fwqljyc">Server connection exception</string>
+    <string name="str_fzcg">Copied</string>
+    <string name="str_fzsb">Copy failed</string>
+
+
+    <string name="str_sjh">Phone NO.</string>
+    <string name="str_qsrsjh">enter phone NO.</string>
+    <string name="str_sjhm">Phone NO.enter phone NO.</string>
+    <string name="str_qsrsjhm">enter phone NO.</string>
+    <string name="str_sjhmgsbzq">Wrong phone number format</string>
+    <string name="str_cdsyw">Phone number should be 11 bits</string>
+    <string name="str_cdsyw2">Phone number should be 15 bits</string>
+    <string name="str_pz">Taking pictures</string>
+    <string name="str_album">Photo album</string>
+    <string name="str_qx">Cancel</string>
+    <string name="str_sfz">ID card</string>
+    <string name="str_huzhao">Passport</string>
+
+</resources>

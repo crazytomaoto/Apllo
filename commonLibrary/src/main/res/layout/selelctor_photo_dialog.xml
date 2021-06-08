@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/f2_to_131"
+    android:orientation="vertical">
+
+    <RadioGroup
+        android:id="@+id/rg_photo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RadioButton
+            android:id="@+id/rb_taking"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/ff_to_131"
+            android:button="@null"
+            android:gravity="center"
+            android:padding="@dimen/d15"
+            android:text="@string/str_pz"
+            android:textColor="@color/_888_to_ff"
+            android:textSize="@dimen/d15"
+            android:textStyle="normal" />
+
+        <RadioButton
+            android:layout_marginTop="@dimen/d1"
+            android:id="@+id/rb_album"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/ff_to_131"
+            android:button="@null"
+            android:gravity="center"
+            android:padding="@dimen/d15"
+            android:text="@string/str_album"
+            android:textColor="@color/_888_to_ff"
+            android:textSize="@dimen/d15"
+            android:textStyle="normal" />
+    </RadioGroup>
+    <ImageView style="@style/lineStyle" />
+    <TextView
+        android:id="@+id/tv_cancel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/d5"
+        android:background="@color/ff_to_131"
+        android:gravity="center"
+        android:padding="@dimen/d15"
+        android:text="@string/str_qx"
+        android:textColor="@color/_888_to_ff"
+        android:textSize="@dimen/d15" />
+</LinearLayout>

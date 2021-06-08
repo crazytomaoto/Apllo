@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_page_main"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <com.sz.apollo.ui.views.ViewPagerSlide
+        android:id="@+id/viewPager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="144px" />
+
+    <include
+        layout="@layout/layout_main_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="144px"
+        android:layout_alignParentBottom="true" />
+</RelativeLayout>

@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/iv_bg"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignTop="@+id/toptop"
+        android:layout_alignBottom="@+id/toolbar_img"
+        android:scaleType="centerCrop"
+        android:src="@drawable/share_ddao" />
+
+    <LinearLayout
+        android:id="@+id/toptop"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#00000000"
+        android:orientation="horizontal"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/toolbar_img_title"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/toptop"
+        android:gravity="center"
+        android:paddingTop="@dimen/dimen_50px"
+        android:paddingBottom="@dimen/dimen_50px"
+        android:textColor="@color/white"
+        android:textSize="@dimen/dimen_50px" />
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar_img"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textSize="@dimen/dimen_50px" />
+    </androidx.appcompat.widget.Toolbar>
+
+    <RelativeLayout
+        android:id="@+id/rl_head"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_144px"
+        android:layout_marginTop="30dp"
+        android:paddingRight="@dimen/dimen_43px">
+
+        <RelativeLayout
+            android:id="@+id/rl_back"
+            android:layout_width="wrap_content"
+            android:layout_height="144px"
+            android:onClick="back"
+            android:paddingLeft="@dimen/dimen_43px"
+            android:paddingRight="@dimen/dimen_43px">
+
+            <ImageView
+                android:id="@+id/iv_back"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:src="@drawable/ic_arrow_back"></ImageView>
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text=""
+            android:textColor="@color/white"
+            android:textSize="@dimen/dimen_46px"></TextView>
+    </RelativeLayout>
+</RelativeLayout>

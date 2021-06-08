@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@color/color_page_main"
+    android:gravity="center_vertical">
+
+    <com.flyco.roundview.RoundTextView
+        android:id="@+id/tvTxHash"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dimen_43px"
+        android:gravity="center"
+        android:padding="@dimen/dimen_10px"
+        android:text=""
+        android:textColor="@color/white"
+        android:textSize="@dimen/dimen_30px"
+        app:rv_backgroundColor="@color/color_copy"
+        app:rv_cornerRadius="5px" />
+
+    <TextView
+        android:id="@+id/tvTransType"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dimen_43px"
+        android:gravity="center"
+        android:text=" "
+        android:textColor="@color/gray2"
+        android:textSize="@dimen/dimen_30px" />
+
+    <TextView
+        android:id="@+id/tv_block_height"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dimen_43px"
+        android:gravity="center"
+        android:text=""
+        android:textColor="@color/white"
+        android:textSize="@dimen/dimen_30px" />
+
+    <com.flyco.roundview.RoundTextView
+        android:id="@+id/tv_from"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dimen_43px"
+        android:gravity="center"
+        android:padding="@dimen/dimen_10px"
+        android:text=""
+        android:textColor="@color/white"
+        android:textSize="@dimen/dimen_30px"
+        app:rv_backgroundColor="#CA3F53"
+        app:rv_cornerRadius="5px" />
+
+    <com.flyco.roundview.RoundTextView
+        android:id="@+id/tv_to"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dimen_43px"
+        android:gravity="center"
+        android:padding="@dimen/dimen_10px"
+        android:text=""
+        android:textColor="@color/white2"
+        android:textSize="@dimen/dimen_30px"
+        app:rv_backgroundColor="@color/color_copy"
+        app:rv_cornerRadius="5px" />
+
+    <TextView
+        android:id="@+id/tvTokenType"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dimen_43px"
+        android:gravity="center"
+        android:text=""
+        android:textColor="@color/gray2"
+        android:textSize="@dimen/dimen_30px" />
+
+    <TextView
+        android:id="@+id/tv_amount"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dimen_43px"
+        android:gravity="center"
+        android:text=""
+        android:textColor="@color/gray2"
+        android:textSize="@dimen/dimen_30px" />
+
+    <TextView
+        android:id="@+id/tv_data"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dimen_43px"
+        android:gravity="left"
+        android:textColor="@color/gray2"
+        android:textSize="@dimen/dimen_30px" />
+
+    <TextView
+        android:id="@+id/tv_date"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dimen_43px"
+        android:gravity="center"
+        android:text=""
+        android:textColor="@color/gray2"
+        android:textSize="@dimen/dimen_30px" />
+
+    <TextView
+        android:id="@+id/tv_check"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dimen_43px"
+        android:gravity="center"
+        android:text="@string/t_check"
+        android:textColor="@color/gray2"
+        android:textSize="@dimen/dimen_30px" />
+</LinearLayout>

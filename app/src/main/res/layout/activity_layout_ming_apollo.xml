@@ -1,0 +1,596 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_page_main"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <include layout="@layout/include_head_normal" />
+
+    <com.sz.apollo.ui.views.MyRefreshLayout
+        android:id="@+id/refreshLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/color_page_main">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_horizontal"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="115px"
+                    android:layout_marginLeft="@dimen/dimen_43px"
+                    android:layout_marginTop="@dimen/dimen_40px"
+                    android:layout_marginRight="37px"
+                    android:background="@drawable/radius_29page_color_2"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true"
+                    android:paddingLeft="@dimen/dimen_40px"
+                    android:paddingRight="@dimen/dimens_45px">
+
+                    <TextView
+                        android:id="@+id/tv_1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:text="@string/tip50"
+                        android:textColor="@color/gray"
+                        android:textSize="@dimen/dimen_35px" />
+
+                    <TextView
+                        android:id="@+id/tv_block_height"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="@dimen/dimen_30px"
+                        android:layout_toRightOf="@id/tv_1"
+                        android:text="0"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/dimen_46px"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/tv_02"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:text="@string/tip51"
+                        android:textColor="@color/gray"
+                        android:textSize="@dimen/dimen_35px" />
+
+                    <TextView
+                        android:id="@+id/tv_count_today"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="23px"
+                        android:layout_toLeftOf="@id/tv_02"
+                        android:text="0 AOC"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/dimen_46px"
+                        android:textStyle="bold" />
+                </RelativeLayout>
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dimen_46px"
+                    android:layout_marginTop="@dimen/dimen_30px"
+                    android:layout_marginRight="@dimen/dimen_46px"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/icon_half_round" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="376px"
+                    android:layout_marginLeft="@dimen/dimen_42px"
+                    android:layout_marginRight="@dimen/dimen_46px">
+
+                    <com.airbnb.lottie.LottieAnimationView
+                        android:layout_width="166px"
+                        android:layout_height="180px"
+                        android:layout_marginLeft="@dimen/dimen_54px"
+                        android:layout_marginTop="@dimen/dimens_56px"
+                        app:lottie_autoPlay="true"
+                        android:scaleType="centerCrop"
+                        app:lottie_fileName="kuangchang.json"
+                        app:lottie_loop="true" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginTop="37px"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/tv_account"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text=""
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/dimen_40px"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/tv_account_state"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_marginRight="37px"
+                            android:text=""
+                            android:textColor="@color/text_green2"
+                            android:textSize="@dimen/dimen_35px" />
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/tv_balance"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="13dp"
+                        android:text="0.00"
+                        android:textColor="@color/white"
+                        android:textSize="30dp"
+                        android:textStyle="bold" />
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="140px"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginLeft="68px"
+                        android:layout_marginRight="@dimen/dimen_32px"
+                        android:paddingBottom="@dimen/dimen_10px">
+
+                        <TextView
+                            android:id="@+id/tv_type"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentBottom="true"
+                            android:text="AOC"
+                            android:textColor="@color/gray"
+                            android:textSize="@dimen/dimen_72px"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/tv_tip"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentBottom="true"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginRight="122px"
+                            android:layout_marginBottom="@dimen/dimen_10px"
+                            android:text="@string/tip42"
+                            android:textColor="@color/gray"
+                            android:textSize="@dimen/dimen_35px"
+                            android:textStyle="bold" />
+
+                        <RelativeLayout
+                            android:id="@+id/rl_address_book"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_alignParentBottom="true"
+                            android:background="@drawable/btn_bg_one"
+                            android:padding="@dimen/dimen_20px">
+
+                            <com.airbnb.lottie.LottieAnimationView
+                                android:id="@+id/lottie_yeMiAn"
+                                android:layout_width="@dimen/dimen_50px"
+                                android:layout_height="@dimen/dimen_50px"
+                                android:scaleType="centerInside"
+                                app:lottie_fileName="miner_yemian.json"
+                                app:lottie_progress="100" />
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:id="@+id/rl_contact"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentBottom="true"
+                            android:layout_marginRight="@dimen/dimen_60px"
+                            android:layout_toLeftOf="@+id/rl_address_book"
+                            android:background="@drawable/btn_bg_one"
+                            android:padding="@dimen/dimen_20px">
+
+                            <ImageView
+                                android:layout_width="@dimen/dimen_48px"
+                                android:layout_height="@dimen/dimen_48px"
+                                android:scaleType="centerCrop"
+                                android:src="@drawable/ic_men" />
+                        </RelativeLayout>
+
+                    </RelativeLayout>
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:id="@+id/ll_notice"
+                    android:layout_width="match_parent"
+                    android:layout_height="115px"
+                    android:layout_marginLeft="@dimen/dimen_43px"
+                    android:layout_marginTop="@dimen/dimen_30px"
+                    android:layout_marginRight="37px"
+                    android:background="@drawable/radius_29page_color_2"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:paddingLeft="@dimen/dimen_35px"
+                    android:paddingRight="@dimen/dimen_35px">
+
+                    <com.airbnb.lottie.LottieAnimationView
+                        android:id="@+id/lottie_laBa"
+                        android:layout_width="@dimen/dimen_48px"
+                        android:layout_height="@dimen/dimen_48px"
+                        app:lottie_autoPlay="true"
+                        app:lottie_fileName="miner_laba.json"
+                        app:lottie_loop="true" />
+
+                    <com.sz.apollo.ui.views.AutoVerticalScrollTextView
+                        android:id="@+id/tv_bulletin"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/dimen_28px"
+                        android:layout_marginRight="@dimen/dimen_28px"
+                        android:layout_weight="1"
+                        android:background="@null" />
+
+                    <RelativeLayout
+                        android:id="@+id/rl_all_bulletinf"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/btn_bg_two"
+                        android:padding="@dimen/dimen_18px">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/ic_bulletin_detail" />
+                    </RelativeLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="210px"
+                    android:layout_marginLeft="@dimen/dimen_43px"
+                    android:layout_marginTop="@dimen/dimen_30px"
+                    android:layout_marginRight="37px"
+                    android:background="@drawable/radius_29page_color_2"
+                    android:gravity="center_vertical"
+                    android:orientation="vertical"
+                    android:paddingLeft="@dimen/dimen_35px"
+                    android:paddingRight="@dimen/dimen_35px">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="0px"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="center_vertical"
+                            android:text="@string/tip44"
+                            android:textColor="@color/gray"
+                            android:textSize="@dimen/dimen_35px" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center_vertical"
+                            android:text="@string/tip43"
+                            android:textColor="@color/gray"
+                            android:textSize="@dimen/dimen_35px" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginTop="@dimen/dimen_10px"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/tv_all_power"
+                            android:layout_width="0px"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="center_vertical"
+                            android:text="0"
+                            android:textColor="@color/white2"
+                            android:textSize="58px" />
+
+                        <TextView
+                            android:id="@+id/tv_my_power_percentage"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center_vertical"
+                            android:text="0"
+                            android:textColor="@color/white2"
+                            android:textSize="58px" />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dimen_43px"
+                    android:layout_marginTop="@dimen/dimen_30px"
+                    android:layout_marginRight="37px"
+                    android:background="@drawable/radius_29page_color_2"
+                    android:orientation="vertical"
+                    android:paddingLeft="@dimen/dimen_35px"
+                    android:paddingRight="@dimen/dimen_35px">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="160px"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal">
+
+                        <com.airbnb.lottie.LottieAnimationView
+                            android:id="@+id/lottie_mining"
+                            android:layout_width="@dimen/dimens_58px"
+                            android:layout_height="@dimen/dimen_50px"
+                            app:lottie_autoPlay="true"
+                            app:lottie_fileName="miner_wakuang.json"
+                            app:lottie_loop="true" />
+
+                        <TextView
+                            android:id="@+id/tv_v"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/dimen_43px"
+                            android:gravity="center_vertical"
+                            android:text=""
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/dimen_40px" />
+
+                        <TextView
+                            android:id="@+id/tv_s"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/dimen_20px"
+                            android:gravity="center_vertical"
+                            android:text=""
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/dimen_40px" />
+
+                        <TextView
+                            android:id="@+id/tv_my_power"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/dimen_43px"
+                            android:layout_weight="1"
+                            android:text=""
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/dimen_40px" />
+
+                        <RelativeLayout
+                            android:id="@+id/rl_power_detail"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/btn_bg_two"
+                            android:padding="@dimen/dimen_16px">
+
+                            <com.airbnb.lottie.LottieAnimationView
+                                android:id="@+id/lottie_jiLu"
+                                android:layout_width="@dimen/dimen_48px"
+                                android:layout_height="@dimen/dimen_48px"
+                                app:lottie_fileName="miner_jilu.json"
+                                app:lottie_progress="100" />
+
+                        </RelativeLayout>
+
+
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="3px"
+                        android:background="@color/color_line" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="160px"
+                        android:background="@color/page_color2"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="0px"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="@string/tip52"
+                            android:textColor="@color/gray"
+                            android:textSize="@dimen/dimen_40px" />
+
+                        <TextView
+                            android:id="@+id/tv_base_power"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="0.00"
+                            android:textColor="@color/white2"
+                            android:textSize="@dimen/dimen_40px" />
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="3px"
+                        android:background="@color/color_line" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="160px"
+                        android:background="@color/page_color2"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="0px"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="@string/tip53"
+                            android:textColor="@color/gray"
+                            android:textSize="@dimen/dimen_40px" />
+
+                        <TextView
+                            android:id="@+id/tv_time_power"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="0.00"
+                            android:textColor="@color/white2"
+                            android:textSize="@dimen/dimen_40px" />
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="3px"
+                        android:background="@color/color_line" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="160px"
+                        android:background="@color/page_color2"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="0px"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="@string/tip54"
+                            android:textColor="@color/gray"
+                            android:textSize="@dimen/dimen_40px" />
+
+                        <TextView
+                            android:id="@+id/tv_share_power"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="0.00"
+                            android:textColor="@color/white2"
+                            android:textSize="@dimen/dimen_40px" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="78px"
+                    android:layout_marginTop="@dimen/dimen_72px"
+                    android:layout_marginRight="@dimen/dimen_72px"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/tip46"
+                        android:textColor="@color/gray"
+                        android:textSize="@dimen/dimen_40px" />
+
+                    <TextView
+                        android:id="@+id/tv_resonance_cell"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/dimen_16px"
+                        android:layout_weight="1"
+                        android:text=""
+                        android:textColor="@color/white2"
+                        android:textSize="@dimen/dimen_40px" />
+
+                    <TextView
+                        android:id="@+id/tv_resonance_cell_left"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=""
+                        android:textColor="@color/white2"
+                        android:textSize="@dimen/dimen_40px" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="15px"
+                        android:text="@string/tip47"
+                        android:textColor="@color/gray"
+                        android:textSize="@dimen/dimen_40px" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="3px"
+                    android:layout_marginLeft="78px"
+                    android:layout_marginTop="@dimen/dimen_32px"
+                    android:layout_marginRight="@dimen/dimen_72px"
+                    android:background="@color/color_line" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="78px"
+                    android:layout_marginTop="22px"
+                    android:layout_marginRight="@dimen/dimen_72px"
+                    android:layout_marginBottom="@dimen/dimen_30px"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="0px"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical"
+                        android:text="@string/tip48"
+                        android:textColor="@color/gray"
+                        android:textSize="@dimen/dimen_35px" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:text="@string/tip49"
+                        android:textColor="@color/gray"
+                        android:textSize="@dimen/dimen_35px" />
+                </LinearLayout>
+
+                <com.sz.apollo.ui.views.AutoListView
+                    android:id="@+id/lv_pool"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dimen_80px"
+                    android:layout_marginRight="@dimen/dimen_80px"
+                    android:divider="@null"
+                    android:dividerHeight="@dimen/dimen_30px"
+                    android:scrollbars="none" />
+
+                <Button
+                    android:id="@+id/btn_mine_now"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dimen_130px"
+                    android:layout_marginLeft="@dimen/dimen_80px"
+                    android:layout_marginTop="@dimen/dimen_50px"
+                    android:layout_marginRight="@dimen/dimen_80px"
+                    android:layout_marginBottom="@dimen/dimen_80px"
+                    android:background="@drawable/radius_14_green1"
+                    android:gravity="center"
+                    android:text="@string/tip203"
+                    android:textAllCaps="false"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/dimen_42px" />
+            </LinearLayout>
+        </ScrollView>
+    </com.sz.apollo.ui.views.MyRefreshLayout>
+
+
+</LinearLayout>

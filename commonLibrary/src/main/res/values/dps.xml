@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="d05">0.50dp</dimen>
+    <dimen name="default_circle_view_size">20dp</dimen>
+</resources>

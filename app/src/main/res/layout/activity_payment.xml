@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_page_main"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <include layout="@layout/include_head_normal" />
+
+    <ImageView
+        android:layout_width="118px"
+        android:layout_height="258px"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="170px"
+        android:scaleType="centerCrop"
+        android:src="@drawable/logo_eth" />
+
+    <TextView
+        android:id="@+id/tv_amount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/dimen_46px"
+        android:text="1.00USDT"
+        android:textColor="@color/white2"
+        android:textSize="86px"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/dimen_36px"
+        android:text="@string/tip78"
+        android:textColor="@color/gray"
+        android:textSize="@dimen/dimen_35px" />
+
+    <LinearLayout
+        android:id="@+id/ll_account"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="128px"
+        android:layout_marginTop="174px"
+        android:layout_marginRight="128px"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/tip79"
+            android:textColor="@color/white2"
+            android:textSize="@dimen/dimen_40px" />
+
+        <TextView
+            android:id="@+id/tv_account"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=" "
+            android:textColor="@color/white2"
+            android:textSize="@dimen/dimen_46px" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dimen_46px"
+            android:src="@drawable/ic_arrow_right" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_pass"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_130px"
+        android:layout_marginLeft="128px"
+        android:layout_marginTop="53px"
+        android:layout_marginRight="128px"
+        android:background="@drawable/radius_14_bottom_boder3">
+
+        <EditText
+            android:id="@+id/ed_pass"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@null"
+            android:gravity="center_vertical"
+            android:hint="@string/tip80"
+            android:inputType="textPassword"
+            android:maxLength="6"
+            android:maxLines="1"
+            android:paddingLeft="@dimen/dimen_42px"
+            android:paddingRight="@dimen/dimen_35px"
+            android:singleLine="true"
+            android:textColor="@color/white2"
+            android:textColorHint="@color/gray"
+            android:textSize="@dimen/dimen_35px" />
+    </LinearLayout>
+
+
+    <TextView
+        android:id="@+id/btn_sure"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_130px"
+        android:layout_above="@id/btn_import"
+        android:layout_below="@id/r2"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="128px"
+        android:layout_marginTop="@dimen/dimen_46px"
+        android:layout_marginRight="128px"
+        android:background="@drawable/radius_14_green1"
+        android:gravity="center"
+        android:text="@string/tip81"
+        android:textColor="@color/white"
+        android:textSize="@dimen/dimen_43px" />
+
+</LinearLayout>

@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="70dp"
+    android:background="@color/color_page_main"
+    android:gravity="center_vertical">
+
+    <com.flyco.roundview.RoundTextView
+        android:id="@+id/tv_txHash"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dimen_43px"
+        android:gravity="center"
+        android:padding="@dimen/dimen_10px"
+        android:text=""
+        android:textColor="@color/white2"
+        android:textSize="@dimen/dimen_30px"
+        app:rv_backgroundColor="@color/color_copy"
+        app:rv_cornerRadius="5px" />
+
+    <TextView
+        android:id="@+id/tv_state"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dimen_200px"
+        android:gravity="center"
+        android:text="executed"
+        android:textColor="@color/gray2"
+        android:textSize="@dimen/dimen_24px" />
+
+    <TextView
+        android:id="@+id/tv_action_number"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dimen_200px"
+        android:gravity="center"
+        android:text="1"
+        android:textColor="@color/gray2"
+        android:textSize="@dimen/dimen_24px" />
+
+    <TextView
+        android:id="@+id/tv_time"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dimen_200px"
+        android:gravity="center"
+        android:text="2020-06-29 16:22:38"
+        android:textColor="@color/gray2"
+        android:textSize="@dimen/dimen_24px" />
+
+    <TextView
+        android:id="@+id/tv_check"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dimen_200px"
+        android:gravity="center"
+        android:text="@string/t_check"
+        android:textColor="@color/gray2"
+        android:textSize="@dimen/dimen_30px" />
+</LinearLayout>

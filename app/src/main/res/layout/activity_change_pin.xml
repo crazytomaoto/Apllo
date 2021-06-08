@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_page_main"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <include layout="@layout/include_head_normal" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_60px"
+        android:orientation="vertical"
+        android:paddingLeft="@dimen/dimen_43px"
+        android:paddingRight="@dimen/dimen_43px">
+
+        <EditText
+            android:id="@+id/ed_pin_now"
+            android:layout_width="match_parent"
+            android:layout_height="156px"
+            android:background="@null"
+            android:digits="@string/passDigits"
+            android:gravity="center_vertical"
+            android:hint="@string/tip112"
+            android:maxLength="12"
+            android:maxLines="1"
+            android:paddingRight="@dimen/dimen_30px"
+            android:singleLine="true"
+            android:text=""
+            android:textColor="@color/white"
+            android:textColorHint="@color/gray3"
+            android:textSize="@dimen/dimen_43px" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="3px"
+            android:background="@color/color_line" />
+
+        <EditText
+            android:id="@+id/ed_pin_new"
+            android:layout_width="match_parent"
+            android:layout_height="156px"
+            android:background="@null"
+            android:digits="@string/passDigits"
+            android:gravity="center_vertical"
+            android:hint="@string/tip113"
+            android:maxLength="12"
+            android:maxLines="1"
+            android:paddingRight="@dimen/dimen_30px"
+            android:singleLine="true"
+            android:text=""
+            android:textColor="@color/white"
+            android:textColorHint="@color/gray3"
+            android:textSize="@dimen/dimen_43px" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="3px"
+            android:background="@color/color_line" />
+
+        <EditText
+            android:id="@+id/ed_pin_re"
+            android:layout_width="match_parent"
+            android:layout_height="156px"
+            android:background="@null"
+            android:digits="@string/passDigits"
+            android:gravity="center_vertical"
+            android:hint="@string/tip114"
+            android:maxLength="12"
+            android:maxLines="1"
+            android:paddingRight="@dimen/dimen_30px"
+            android:singleLine="true"
+            android:text=""
+            android:textColor="@color/white"
+            android:textColorHint="@color/gray3"
+            android:textSize="@dimen/dimen_43px" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="3px"
+            android:background="@color/color_line" />
+    </LinearLayout>
+
+    <com.flyco.roundview.RoundTextView
+        android:id="@+id/btn_sure"
+        android:layout_width="690px"
+        android:layout_height="@dimen/dimen_130px"
+        android:layout_above="@id/btn_import"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="108px"
+        android:layout_marginBottom="58px"
+        android:gravity="center"
+        android:text="@string/tip115"
+        android:textColor="@color/white"
+        android:textSize="@dimen/dimen_42px"
+        app:rv_backgroundColor="@color/color_copy"
+        app:rv_cornerRadius="14px" />
+</LinearLayout>

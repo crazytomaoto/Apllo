@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="864px"
+    android:layout_height="550px"
+    android:layout_gravity="center"
+    android:background="@drawable/radius_22_gray5"
+    android:orientation="vertical">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="98px"
+        android:src="@drawable/ic_address_book" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:text="是否保存地址到地址簿？"
+        android:textColor="@color/white2"
+        android:textSize="@dimen/dimen_46px" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/dimen_30px"
+        android:paddingLeft="160px"
+        android:paddingRight="160px">
+
+        <TextView
+            android:id="@+id/tv_cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/dimen_10px"
+            android:text="@string/button_cancel"
+            android:textColor="@color/gray"
+            android:textSize="@dimen/dimen_43px" />
+
+        <TextView
+            android:id="@+id/tv_sure"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:padding="@dimen/dimen_10px"
+            android:text="@string/sure"
+            android:textColor="@color/gray"
+            android:textSize="@dimen/dimen_43px" />
+    </RelativeLayout>
+
+</LinearLayout>

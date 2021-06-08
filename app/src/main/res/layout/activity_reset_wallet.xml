@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_page_main"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <include layout="@layout/include_head_normal" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/dimen_60px"
+        android:orientation="vertical"
+        android:paddingLeft="@dimen/dimen_43px"
+        android:paddingRight="@dimen/dimen_43px">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="395px"
+            android:layout_marginTop="@dimen/dimen_60px"
+            android:background="@drawable/radius_14_page_color_2"
+            android:orientation="vertical"
+            android:paddingLeft="@dimen/dimen_35px"
+            android:paddingRight="@dimen/dimen_35px">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimen_30px"
+                android:background="@null"
+                android:gravity="center_vertical"
+                android:singleLine="true"
+                android:text="@string/tip126"
+                android:textColor="@color/white"
+                android:textSize="@dimen/dimen_43px" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimen_20px"
+                android:background="@null"
+                android:gravity="center_vertical"
+                android:singleLine="true"
+                android:text="@string/tip127"
+                android:textColor="@color/white"
+                android:textSize="@dimen/dimen_35px" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="189px"
+                android:layout_marginTop="@dimen/dimen_10px"
+                android:background="@drawable/r_14_b_3"
+                android:gravity="center_vertical"
+                android:paddingLeft="@dimen/dimen_35px"
+                android:paddingRight="@dimen/dimen_35px"
+                android:text="@string/tip125"
+                android:textColor="#E86464"
+                android:textSize="34px" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="395px"
+            android:layout_marginTop="@dimen/dimen_43px"
+            android:background="@drawable/radius_14_page_color_2"
+            android:orientation="vertical"
+            android:paddingLeft="@dimen/dimen_35px"
+            android:paddingRight="@dimen/dimen_35px">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimen_30px"
+                android:background="@null"
+                android:gravity="center_vertical"
+                android:singleLine="true"
+                android:text="@string/tip128"
+                android:textColor="@color/white"
+                android:textSize="@dimen/dimen_43px" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="232px"
+                android:layout_marginTop="@dimen/dimen_30px"
+                android:background="@drawable/r_14_b_3"
+                android:gravity="center_vertical"
+                android:paddingLeft="@dimen/dimen_35px"
+                android:paddingRight="@dimen/dimen_35px"
+                android:text="@string/tip129"
+                android:textColor="#E86464"
+                android:textSize="34px" />
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="252px"
+            android:layout_marginTop="@dimen/dimen_43px"
+            android:background="@drawable/radius_14_page_color_2"
+            android:orientation="vertical"
+            android:paddingLeft="@dimen/dimen_35px"
+            android:paddingRight="@dimen/dimen_35px">
+
+            <ImageView
+                android:layout_width="49px"
+                android:layout_height="49px"
+                android:layout_centerVertical="true"
+                android:src="@drawable/ic_tip_red" />
+
+            <TextView
+                android:layout_width="705px"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:background="@null"
+                android:text="@string/tip130"
+                android:textColor="@color/white"
+                android:textSize="@dimen/dimen_32px" />
+
+            <Switch
+                android:id="@+id/switch1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:checked="false"
+                android:thumb="@drawable/thumb"
+                android:track="@drawable/track" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="bottom"
+            android:orientation="vertical">
+
+            <com.flyco.roundview.RoundTextView
+                android:id="@+id/btn_sure"
+                android:layout_width="690px"
+                android:layout_height="@dimen/dimen_130px"
+                android:layout_above="@id/btn_import"
+                android:layout_centerHorizontal="true"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="@dimen/dimen_60px"
+                android:gravity="center"
+                android:text="@string/tip131"
+                android:textColor="@color/white"
+                android:textSize="@dimen/dimen_42px"
+                app:rv_backgroundColor="@color/color_copy"
+                app:rv_cornerRadius="65px" />
+        </LinearLayout>
+    </LinearLayout>
+
+
+</LinearLayout>

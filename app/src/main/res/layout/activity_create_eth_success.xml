@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_page_main"
+    android:fitsSystemWindows="true"
+    android:gravity="center_horizontal"
+    android:orientation="vertical">
+
+    <ImageView
+        android:layout_width="145px"
+        android:layout_height="145px"
+        android:layout_marginTop="360px"
+        android:src="@drawable/ic_create_eth_ok" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="85px"
+        android:text="@string/t_create_w"
+        android:textColor="@color/white"
+        android:textSize="@dimen/dimen_66px" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_52px"
+        android:text="@string/tip16"
+        android:textColor="@color/white"
+        android:textSize="@dimen/dimen_40px" />
+
+    <ImageView
+        android:layout_width="144px"
+        android:layout_height="312px"
+        android:layout_marginTop="252px"
+        android:src="@drawable/logo_eth" />
+
+    <com.flyco.roundview.RoundTextView
+        android:id="@+id/tv_finish"
+        android:layout_width="460px"
+        android:layout_height="@dimen/dimen_130px"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="356px"
+        android:layout_marginBottom="53px"
+        android:gravity="center"
+        android:text="@string/t_finish"
+        android:textColor="@color/white"
+        android:textSize="@dimen/dimen_43px"
+        app:rv_backgroundColor="@color/color_copy"
+        app:rv_cornerRadius="65px" />
+</LinearLayout>

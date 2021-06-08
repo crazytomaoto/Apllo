@@ -1,0 +1,59 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.collectlife.platform"
+4    android:versionCode="1"
+5    android:versionName="1.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="20"
+8-->D:\work\projects\Apollo\hysd_android_platform_sdk\src\main\AndroidManifest.xml
+9        android:targetSdkVersion="29" />
+9-->D:\work\projects\Apollo\hysd_android_platform_sdk\src\main\AndroidManifest.xml
+10
+11    <!-- 单元测试 -->
+12    <instrumentation
+12-->D:\work\projects\Apollo\hysd_android_platform_sdk\src\main\AndroidManifest.xml:14:5-16:60
+13        android:name="android.test.InstrumentationTestRunner"
+13-->D:\work\projects\Apollo\hysd_android_platform_sdk\src\main\AndroidManifest.xml:15:9-62
+14        android:targetPackage="com.collectlife.platform" />
+14-->D:\work\projects\Apollo\hysd_android_platform_sdk\src\main\AndroidManifest.xml:16:9-57
+15
+16    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+16-->D:\work\projects\Apollo\hysd_android_platform_sdk\src\main\AndroidManifest.xml:18:5-78
+16-->D:\work\projects\Apollo\hysd_android_platform_sdk\src\main\AndroidManifest.xml:18:22-75
+17    <uses-permission android:name="android.permission.INTERNET" />
+17-->D:\work\projects\Apollo\hysd_android_platform_sdk\src\main\AndroidManifest.xml:19:5-67
+17-->D:\work\projects\Apollo\hysd_android_platform_sdk\src\main\AndroidManifest.xml:19:22-64
+18    <uses-permission android:name="android.permission.CALL_PHONE" />
+18-->D:\work\projects\Apollo\hysd_android_platform_sdk\src\main\AndroidManifest.xml:20:5-69
+18-->D:\work\projects\Apollo\hysd_android_platform_sdk\src\main\AndroidManifest.xml:20:22-66
+19    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+19-->D:\work\projects\Apollo\hysd_android_platform_sdk\src\main\AndroidManifest.xml:21:5-75
+19-->D:\work\projects\Apollo\hysd_android_platform_sdk\src\main\AndroidManifest.xml:21:22-72
+20    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+20-->D:\work\projects\Apollo\hysd_android_platform_sdk\src\main\AndroidManifest.xml:22:5-79
+20-->D:\work\projects\Apollo\hysd_android_platform_sdk\src\main\AndroidManifest.xml:22:22-76
+21    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+21-->D:\work\projects\Apollo\hysd_android_platform_sdk\src\main\AndroidManifest.xml:23:5-76
+21-->D:\work\projects\Apollo\hysd_android_platform_sdk\src\main\AndroidManifest.xml:23:22-73
+22    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+22-->D:\work\projects\Apollo\hysd_android_platform_sdk\src\main\AndroidManifest.xml:24:5-81
+22-->D:\work\projects\Apollo\hysd_android_platform_sdk\src\main\AndroidManifest.xml:24:22-78
+23    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+23-->D:\work\projects\Apollo\hysd_android_platform_sdk\src\main\AndroidManifest.xml:25:5-79
+23-->D:\work\projects\Apollo\hysd_android_platform_sdk\src\main\AndroidManifest.xml:25:22-76
+24    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+24-->D:\work\projects\Apollo\hysd_android_platform_sdk\src\main\AndroidManifest.xml:26:5-81
+24-->D:\work\projects\Apollo\hysd_android_platform_sdk\src\main\AndroidManifest.xml:26:22-78
+25
+26    <application android:allowBackup="true" >
+26-->D:\work\projects\Apollo\hysd_android_platform_sdk\src\main\AndroidManifest.xml:7:5-11:19
+26-->D:\work\projects\Apollo\hysd_android_platform_sdk\src\main\AndroidManifest.xml:7:18-44
+27
+28        <!-- 单元测试 -->
+29        <uses-library android:name="android.test.runner" />
+29-->D:\work\projects\Apollo\hysd_android_platform_sdk\src\main\AndroidManifest.xml:10:9-60
+29-->D:\work\projects\Apollo\hysd_android_platform_sdk\src\main\AndroidManifest.xml:10:23-57
+30    </application>
+31
+32</manifest>

@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_page_main"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <include layout="@layout/include_head_normal" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="320px"
+        android:layout_marginLeft="@dimen/dimen_43px"
+        android:layout_marginTop="@dimen/dimen_60px"
+        android:layout_marginRight="@dimen/dimen_43px"
+        android:orientation="vertical"
+        android:paddingLeft="@dimen/dimen_35px"
+        android:paddingRight="@dimen/dimen_35px"
+        android:background="@drawable/radius_14_page_color_2">
+
+        <LinearLayout
+            android:id="@+id/ll_check_version"
+            android:layout_width="match_parent"
+            android:layout_height="0px"
+            android:layout_weight="1"
+            android:gravity="center_vertical">
+
+            <ImageView
+                android:layout_width="@dimen/dimen_50px"
+                android:layout_height="45px"
+                android:layout_gravity="center_vertical"
+                android:src="@drawable/ic_version" />
+
+            <TextView
+                android:layout_width="0px"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="38px"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:maxLines="1"
+                android:singleLine="true"
+                android:text="@string/tip132"
+                android:textColor="@color/white"
+                android:textSize="@dimen/dimen_40px" />
+
+            <TextView
+                android:id="@+id/tv_version"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/dimen_50px"
+                android:gravity="center_vertical"
+                android:maxLines="1"
+                android:singleLine="true"
+                android:text="V 1.0.0"
+                android:textColor="@color/white"
+                android:textSize="@dimen/dimen_40px" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_arrow_right" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="3px"
+            android:background="@color/color_page_main" />
+
+        <LinearLayout
+            android:id="@+id/ll_contact_us"
+            android:layout_width="match_parent"
+            android:layout_height="0px"
+            android:layout_weight="1"
+            android:gravity="center_vertical">
+
+            <ImageView
+                android:layout_width="@dimen/dimen_50px"
+                android:layout_height="37px"
+                android:layout_gravity="center_vertical"
+                android:background="@drawable/ic_mail" />
+
+            <TextView
+                android:layout_width="0px"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="38px"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:maxLines="1"
+                android:singleLine="true"
+                android:text="@string/tip133"
+                android:textColor="@color/white"
+                android:textSize="@dimen/dimen_40px" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

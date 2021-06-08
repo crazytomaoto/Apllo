@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/page_color2"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="664px"
+        android:background="@drawable/bg_choose_type">
+
+        <ImageView
+            android:id="@+id/iv_back"
+            android:layout_width="26px"
+            android:layout_height="144px"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/dimen_43px"
+            android:onClick="back"
+            android:src="@drawable/ic_arrow_back" />
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/color_page_main"
+        android:orientation="vertical"
+        android:paddingLeft="78px"
+        android:paddingRight="@dimen/dimen_80px">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="135px"
+            android:text="选择链类型"
+            android:textColor="@color/white"
+            android:textSize="@dimen/dimen_46px" />
+
+        <LinearLayout
+            android:id="@+id/ll_apl"
+            android:layout_width="match_parent"
+            android:layout_height="242px"
+            android:layout_marginTop="@dimen/dimen_60px"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="92px"
+                android:layout_height="92px"
+                android:layout_marginRight="@dimen/dimen_32px"
+                android:src="@drawable/ic_apl_logo_select_yes" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:text="APOLLO"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/dimen_40px" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dimen_20px"
+                    android:gravity="center_vertical"
+                    android:text="Apollochain"
+                    android:textColor="@color/gray"
+                    android:textSize="@dimen/dimen_32px" />
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_arrow_right" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="3px"
+            android:background="@color/color_line" />
+
+        <LinearLayout
+            android:id="@+id/ll_eth"
+            android:layout_width="match_parent"
+            android:layout_height="242px"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="92px"
+                android:layout_height="92px"
+                android:layout_marginRight="@dimen/dimen_32px"
+                android:src="@drawable/ic_eth_logo_select_yes" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:text="ETH"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/dimen_40px" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dimen_20px"
+                    android:gravity="center_vertical"
+                    android:text="Ethereum"
+                    android:textColor="@color/gray"
+                    android:textSize="@dimen/dimen_32px" />
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_arrow_right" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="3px"
+            android:background="@color/color_line" />
+    </LinearLayout>
+</LinearLayout>

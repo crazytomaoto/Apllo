@@ -1,0 +1,96 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_page_main"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <include layout="@layout/include_head_normal" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="323px"
+        android:layout_marginLeft="@dimen/dimen_43px"
+        android:layout_marginTop="@dimen/dimen_60px"
+        android:layout_marginRight="@dimen/dimen_43px"
+        android:background="@drawable/radius_14_page_color_2"
+        android:orientation="vertical">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="0px"
+            android:layout_weight="1">
+
+            <ImageView
+                android:layout_width="47px"
+                android:layout_height="42px"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="@dimen/dimen_35px"
+                android:background="@drawable/ic_address" />
+
+            <EditText
+                android:id="@+id/ed_address"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginRight="@dimen/dimen_30px"
+                android:background="@null"
+                android:digits="@string/passDigits"
+                android:hint="@string/tip97"
+                android:inputType="text"
+                android:maxLines="1"
+                android:paddingLeft="122px"
+                android:singleLine="true"
+                android:textColor="@color/white"
+                android:textColorHint="@color/gray3"
+                android:textSize="@dimen/dimen_40px" />
+        </FrameLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="3px"
+            android:background="@color/color_page_main" />
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="0px"
+            android:layout_weight="1">
+
+            <ImageView
+                android:layout_width="47px"
+                android:layout_height="42px"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="@dimen/dimen_35px"
+                android:background="@drawable/ic_remark" />
+
+            <EditText
+                android:id="@+id/ed_remark"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginRight="@dimen/dimen_30px"
+                android:background="@null"
+                android:hint="@string/tip98"
+                android:maxLines="1"
+                android:paddingLeft="122px"
+                android:singleLine="true"
+                android:textColor="@color/white"
+                android:textColorHint="@color/gray3"
+                android:textSize="@dimen/dimen_40px" />
+        </FrameLayout>
+    </LinearLayout>
+
+    <com.flyco.roundview.RoundTextView
+        android:id="@+id/btn_sure"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_130px"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginLeft="@dimen/dimen_43px"
+        android:layout_marginTop="@dimen/dimen_40px"
+        android:layout_marginRight="@dimen/dimen_43px"
+        android:gravity="center"
+        android:text="@string/sure"
+        android:textColor="@color/white"
+        android:textSize="@dimen/dimen_43px"
+        app:rv_backgroundColor="@color/gray6"
+        app:rv_cornerRadius="14px" />
+</LinearLayout>

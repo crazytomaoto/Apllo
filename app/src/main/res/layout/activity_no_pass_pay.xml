@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_page_main"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <include layout="@layout/include_head_normal" />
+
+    <ImageView
+        android:layout_width="285px"
+        android:layout_height="284px"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="127px"
+        android:src="@drawable/ic_fingerprint_pag" />
+
+    <EditText
+        android:id="@+id/ed_pin"
+        android:layout_width="600px"
+        android:layout_height="@dimen/dimen_80px"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="140px"
+        android:background="@null"
+        android:gravity="center"
+        android:hint="@string/tip112"
+        android:textColor="@color/white"
+        android:textColorHint="@color/gray2"
+        android:textSize="@dimen/dimen_43px" />
+
+    <TextView
+        android:id="@+id/tipOne"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/dimen_20px"
+        android:layout_marginBottom="@dimen/dimen_80px"
+        android:background="@null"
+        android:gravity="center"
+        android:hint="@string/tip117"
+        android:textColorHint="@color/gray2"
+        android:textSize="@dimen/dimen_35px" />
+
+    <TextView
+        android:id="@+id/btn_open"
+        android:layout_width="690px"
+        android:layout_height="@dimen/dimen_130px"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="@dimen/dimen_80px"
+        android:background="@drawable/radius_14_green1"
+        android:gravity="center"
+        android:text="@string/tip118"
+        android:textColor="@color/white"
+        android:textSize="@dimen/dimen_43px" />
+
+    <TextView
+        android:id="@+id/btn_close"
+        android:layout_width="690px"
+        android:layout_height="@dimen/dimen_130px"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="@dimen/dimen_80px"
+        android:background="@drawable/radius_14_green1"
+        android:gravity="center"
+        android:text="@string/close_finger"
+        android:textColor="@color/color_red2"
+        android:textSize="@dimen/dimen_43px"
+        android:visibility="gone" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingTop="@dimen/dimen_40px"
+        android:paddingBottom="@dimen/dimen_40px"
+        android:scrollbars="none">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingLeft="79px"
+            android:paddingRight="79px"
+            android:text="@string/tip143"
+            android:textColor="@color/gray2"
+            android:textSize="@dimen/dimen_36px" />
+    </ScrollView>
+</LinearLayout>

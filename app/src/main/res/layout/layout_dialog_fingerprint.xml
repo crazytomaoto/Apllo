@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="864px"
+    android:layout_height="708px"
+    android:layout_gravity="center"
+    android:background="@drawable/radius_22_white"
+    android:orientation="vertical">
+
+    <ImageView
+        android:layout_width="230px"
+        android:layout_height="226px"
+        android:layout_centerInParent="true"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="92px"
+        android:layout_marginBottom="70px"
+        android:src="@drawable/ic_fingerprint_dialog" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="@string/tip122"
+        android:textColor="@color/color_page_main"
+        android:textSize="@dimen/dimen_52px" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/dimen_32px"
+        android:text="@string/tip123"
+        android:textColor="@color/gray"
+        android:textSize="@dimen/dimen_35px" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/tv_cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:padding="15px"
+            android:text="@string/tip124"
+            android:textColor="@color/color_page_main"
+            android:textSize="@dimen/dimen_52px" />
+    </RelativeLayout>
+
+</LinearLayout>

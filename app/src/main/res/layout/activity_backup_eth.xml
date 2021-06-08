@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_backup_eth">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/iv_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/dimen_40px"
+            android:layout_marginTop="@dimen/d50"
+            android:onClick="back"
+            android:padding="@dimen/dimen_10px"
+            android:src="@drawable/ic_arrow_back"/>
+
+        <LinearLayout
+            android:layout_width="924px"
+            android:layout_height="460px"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginLeft="76px"
+            android:layout_marginTop="800px"
+            android:layout_marginRight="79px"
+            android:background="@drawable/radius_14_page_color_2"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/dimen_60px"
+                android:text="@string/tip29"
+                android:textColor="@color/gray"
+                android:textSize="@dimen/dimen_52px" />
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="785px"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginLeft="@dimen/dimen_50px"
+                android:layout_marginTop="@dimen/dimen_50px"
+                android:layout_marginRight="@dimen/dimen_66px"
+                android:text="@string/tip30"
+                android:textColor="@color/gray"
+                android:textSize="@dimen/dimen_40px" />
+        </LinearLayout>
+
+        <com.flyco.roundview.RoundTextView
+            android:id="@+id/tv_backup"
+            android:layout_width="480px"
+            android:layout_height="@dimen/dimen_130px"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="78px"
+            android:gravity="center"
+            android:text="@string/t_start_backup"
+            android:textColor="@color/white"
+            android:textSize="@dimen/dimen_43px"
+            app:rv_backgroundColor="@color/color_copy"
+            app:rv_cornerRadius="14px" />
+
+        <com.flyco.roundview.RoundTextView
+            android:id="@+id/tv_backup_no"
+            android:layout_width="480px"
+            android:layout_height="@dimen/dimen_130px"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/dimen_40px"
+            android:gravity="center"
+            android:text="@string/t_backup_no"
+            android:textColor="@color/white"
+            android:textSize="@dimen/dimen_43px"
+            app:rv_backgroundColor="@color/gray5"
+            app:rv_cornerRadius="14px" />
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

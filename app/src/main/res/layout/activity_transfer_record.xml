@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_page_main"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <include layout="@layout/include_head_normal" />
+
+    <TextView
+        android:id="@+id/tv_balance"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="56px"
+        android:layout_marginBottom="@dimen/dimen_120px"
+        android:text=""
+        android:textColor="@color/white2"
+        android:textSize="115px"
+        android:textStyle="bold" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="@dimen/dimen_60px"
+            android:background="@drawable/radius_72_page_color_2"
+            android:orientation="vertical"
+            android:paddingLeft="29px"
+            android:paddingRight="@dimen/dimen_32px">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="105px">
+
+                <TextView
+                    android:layout_width="0px"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="38px"
+                    android:layout_weight="1"
+                    android:paddingBottom="26px"
+                    android:text="@string/t_trans_record"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/dimen_36px" />
+
+                <LinearLayout
+                    android:id="@+id/ll_filter"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:visibility="gone">
+
+                    <ImageView
+                        android:id="@+id/iv_down"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ic_record_down" />
+
+                    <ImageView
+                        android:id="@+id/iv_up"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/dimen_52px"
+                        android:src="@drawable/ic_record_up" />
+
+                    <ImageView
+                        android:id="@+id/iv_list_book"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/dimen_48px"
+                        android:src="@drawable/ic_record_book" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <com.sz.apollo.ui.views.MyRefreshLayout
+                android:id="@+id/refreshLayout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <ListView
+                        android:id="@+id/lv_record"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:divider="@null"
+                        android:scrollbars="none" />
+
+                    <include
+                        layout="@layout/layout_empty"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:visibility="gone" />
+                </LinearLayout>
+
+            </com.sz.apollo.ui.views.MyRefreshLayout>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="645px"
+            android:layout_height="@dimen/dimen_120px"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/radius_60_bottom"
+            android:gravity="center_vertical">
+
+            <LinearLayout
+                android:id="@+id/ll_send"
+                android:layout_width="0px"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="@dimen/dimen_48px"
+                    android:layout_height="@dimen/dimen_54px"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/dimen_42px"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/ic_sent" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/dimen_24px"
+                    android:text="@string/t_transfer"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/dimen_50px" />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="2px"
+                android:layout_height="26px"
+                android:layout_centerInParent="true"
+                android:background="@color/page_color2" />
+
+            <LinearLayout
+                android:id="@+id/ll_receive"
+                android:layout_width="0px"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="@dimen/dimen_48px"
+                    android:layout_height="@dimen/dimen_54px"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/dimen_24px"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/ic_receive" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="38px"
+                    android:text="@string/t_receive"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/dimen_50px" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </RelativeLayout>
+</LinearLayout>

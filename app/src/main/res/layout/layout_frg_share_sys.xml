@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_page_main"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <include layout="@layout/include_head_normal" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="528px"
+        android:layout_marginLeft="@dimen/dimen_43px"
+        android:layout_marginTop="@dimen/dimen_50px"
+        android:layout_marginRight="@dimen/dimen_48px"
+        android:background="@drawable/ic_share_sys_bg">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="290px"
+            android:text="@string/tip172"
+            android:textColor="@color/white"
+            android:textSize="@dimen/dimen_46px"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tv_all"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="@dimen/dimen_60px"
+            android:text="0"
+            android:textColor="@color/white"
+            android:textSize="86px"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="78px"
+        android:layout_marginTop="78px"
+        android:layout_marginRight="78px"
+        android:layout_marginBottom="@dimen/dimen_55px"
+        android:text="@string/tip173"
+        android:textColor="@color/gray"
+        android:textSize="@dimen/dimen_40px"
+        android:textStyle="bold" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="3px"
+        android:layout_marginLeft="78px"
+        android:layout_marginRight="78px"
+        android:background="@color/color_line" />
+
+    <ListView
+        android:id="@+id/lv_share"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="78px"
+        android:layout_marginRight="78px"
+        android:divider="@color/color_line"
+        android:dividerHeight="3px" />
+
+    <include layout="@layout/layout_empty" />
+</LinearLayout>

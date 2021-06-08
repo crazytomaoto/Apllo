@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/dimens_1452px"
+    android:layout_gravity="bottom"
+    android:background="@drawable/radius_29_gray5"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_130px">
+
+        <LinearLayout
+            android:id="@+id/ll_close"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/dimen_80px"
+            android:padding="@dimen/dimen_20px">
+
+            <ImageView
+                android:layout_width="@dimen/dimen_40px"
+                android:layout_height="@dimen/dimen_40px"
+                android:src="@drawable/ic_close" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_topic"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="RAW"
+            android:textColor="@color/white"
+            android:textSize="@dimen/dimen_46px" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="@dimen/dimen_43px"
+        android:layout_marginRight="@dimen/dimen_43px"
+        android:layout_marginBottom="@dimen/dimen_50px"
+        android:background="@drawable/radius_14_gray6">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scrollbars="none">
+
+            <TextView
+                android:id="@+id/tv_content"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/dimen_36px"
+                android:textColor="@color/gray2"
+                android:textSize="@dimen/dimens_29px" />
+        </ScrollView>
+    </LinearLayout>
+</LinearLayout>

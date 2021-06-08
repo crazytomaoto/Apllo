@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="878px"
+    android:layout_gravity="bottom"
+    android:orientation="vertical"
+    android:background="@drawable/radius_29_gray5">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="156px">
+
+        <LinearLayout
+            android:id="@+id/ll_close"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/dimen_80px"
+            android:padding="@dimen/dimen_20px">
+
+            <ImageView
+                android:layout_width="@dimen/dimen_40px"
+                android:layout_height="@dimen/dimen_40px"
+                android:src="@drawable/ic_close" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/tip83"
+            android:textColor="@color/white"
+            android:textSize="@dimen/dimen_46px" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="3px"
+        android:background="@color/color_line" />
+
+    <ListView
+        android:id="@+id/lv_address"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="45px"
+        android:layout_marginRight="@dimen/dimen_50px"
+        android:divider="@color/color_line"
+        android:dividerHeight="3px"
+        android:scrollbars="none"></ListView>
+</LinearLayout>

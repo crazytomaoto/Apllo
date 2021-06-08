@@ -1,0 +1,264 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_page_main"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <include layout="@layout/include_head_normal" />
+
+    <com.sz.apollo.ui.views.MyRefreshLayout
+        android:id="@+id/refreshLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/ll_data"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="400px"
+                    android:background="@color/page_color2"
+                    android:gravity="center_vertical"
+                    android:orientation="vertical"
+                    android:paddingLeft="@dimen/dimen_43px"
+                    android:paddingRight="@dimen/dimen_43px">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/dimen_30px"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="@string/tip167"
+                            android:textColor="@color/gray2"
+                            android:textSize="@dimen/dimen_42px" />
+
+                        <TextView
+                            android:id="@+id/tv_address"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/white"
+                            android:textSize="45px" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/dimen_30px"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal"
+                        android:visibility="gone">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="@string/tip168"
+                            android:textColor="@color/gray2"
+                            android:textSize="@dimen/dimen_42px" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/white"
+                            android:textSize="45px" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/tv_date"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/dimen_30px"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="@string/tip169"
+                            android:textColor="@color/gray2"
+                            android:textSize="@dimen/dimen_42px" />
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="right"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/tv_balance_aot"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text=" "
+                                android:textColor="@color/white"
+                                android:textSize="@dimen/dimen_42px" />
+
+                            <TextView
+                                android:id="@+id/tv_balance_aoc"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text=" "
+                                android:textColor="@color/white"
+                                android:textSize="@dimen/dimen_42px" />
+
+                            <TextView
+                                android:id="@+id/tv_balance_nbo"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text=" "
+                                android:textColor="@color/white"
+                                android:textSize="@dimen/dimen_42px" />
+                        </LinearLayout>
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <com.sz.apollo.ui.views.CustomHorizontalScrollView
+                    android:id="@+id/hor_scrollview"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="@dimen/dimen_50px"
+                    android:layout_marginBottom="@dimen/dimen_50px"
+                    android:fillViewport="true"
+                    android:overScrollMode="never"
+                    android:scrollbars="none">
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="@dimen/dimen_60px"
+                            android:gravity="center_vertical"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="80dp"
+                                android:layout_height="match_parent"
+                                android:layout_marginLeft="@dimen/dimen_52px"
+                                android:gravity="center_vertical"
+                                android:text="ID"
+                                android:textColor="@color/gray2"
+                                android:textSize="@dimen/dimen_36px" />
+
+                            <TextView
+                                android:layout_width="80dp"
+                                android:layout_height="match_parent"
+                                android:layout_marginLeft="@dimen/dimen_43px"
+                                android:gravity="center"
+                                android:text="类型"
+                                android:textColor="@color/gray2"
+                                android:textSize="@dimen/dimen_36px" />
+
+                            <TextView
+                                android:layout_width="100dp"
+                                android:layout_height="match_parent"
+                                android:layout_marginLeft="@dimen/dimen_43px"
+                                android:gravity="center"
+                                android:text="区块高度"
+                                android:textColor="@color/gray2"
+                                android:textSize="@dimen/dimen_36px" />
+
+                            <TextView
+                                android:layout_width="80dp"
+                                android:layout_height="match_parent"
+                                android:layout_marginLeft="@dimen/dimen_43px"
+                                android:gravity="center"
+                                android:text="发起"
+                                android:textColor="@color/gray2"
+                                android:textSize="@dimen/dimen_36px" />
+
+                            <TextView
+                                android:layout_width="80dp"
+                                android:layout_height="match_parent"
+                                android:layout_marginLeft="@dimen/dimen_43px"
+                                android:gravity="center"
+                                android:text="接收"
+                                android:textColor="@color/gray2"
+                                android:textSize="@dimen/dimen_36px" />
+
+                            <TextView
+                                android:layout_width="100dp"
+                                android:layout_height="match_parent"
+                                android:layout_marginLeft="@dimen/dimen_43px"
+                                android:gravity="center"
+                                android:text="Token"
+                                android:textColor="@color/gray2"
+                                android:textSize="@dimen/dimen_36px" />
+
+                            <TextView
+                                android:layout_width="100dp"
+                                android:layout_height="match_parent"
+                                android:layout_marginLeft="@dimen/dimen_43px"
+                                android:gravity="center"
+                                android:text="数量"
+                                android:textColor="@color/gray2"
+                                android:textSize="@dimen/dimen_36px" />
+
+                            <TextView
+                                android:layout_width="100dp"
+                                android:layout_height="match_parent"
+                                android:layout_marginLeft="@dimen/dimen_43px"
+                                android:gravity="center"
+                                android:text="Data"
+                                android:textColor="@color/gray2"
+                                android:textSize="@dimen/dimen_36px" />
+
+                            <TextView
+                                android:layout_width="100dp"
+                                android:layout_height="match_parent"
+                                android:layout_marginLeft="@dimen/dimen_43px"
+                                android:gravity="center"
+                                android:text="调用时间"
+                                android:textColor="@color/gray2"
+                                android:textSize="@dimen/dimen_36px" />
+
+                            <TextView
+                                android:layout_width="100dp"
+                                android:layout_height="match_parent"
+                                android:layout_marginLeft="@dimen/dimen_43px"
+                                android:gravity="center"
+                                android:text="RAW"
+                                android:textColor="@color/gray2"
+                                android:textSize="@dimen/dimen_36px" />
+                        </LinearLayout>
+
+                        <androidx.recyclerview.widget.RecyclerView
+                            android:id="@+id/rv_tab_right"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:overScrollMode="never"
+                            android:scrollbars="none">
+
+                        </androidx.recyclerview.widget.RecyclerView>
+
+                    </LinearLayout>
+
+                </com.sz.apollo.ui.views.CustomHorizontalScrollView>
+            </LinearLayout>
+
+            <include layout="@layout/layout_empty" />
+        </LinearLayout>
+    </com.sz.apollo.ui.views.MyRefreshLayout>
+
+
+</LinearLayout>

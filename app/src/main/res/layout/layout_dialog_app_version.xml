@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="300dp"
+    android:layout_height="wrap_content"
+    android:background="@drawable/radius_22_gray5"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tv_theme"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="left"
+        android:layout_marginLeft="@dimen/dimens_68px"
+        android:layout_marginTop="@dimen/dimen_64px"
+        android:layout_marginBottom="@dimen/dimen_28px"
+        android:text="@string/tip186"
+        android:textColor="@color/gray"
+        android:textSize="@dimen/dimen_42px" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="300px">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dimens_68px"
+            android:layout_marginTop="@dimen/dimen_10px"
+            android:layout_marginRight="@dimen/dimens_68px"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:paddingBottom="@dimen/dimen_30px">
+
+            <TextView
+                android:id="@+id/tv_vName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="left"
+                android:text=""
+                android:textColor="@color/gray"
+                android:textSize="@dimen/dimen_42px" />
+
+            <TextView
+                android:id="@+id/tv_appDesc"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimen_50px"
+                android:gravity="left"
+                android:text=""
+                android:textColor="@color/gray"
+                android:textSize="@dimen/dimen_42px" />
+        </LinearLayout>`
+    </ScrollView>
+
+
+    <TextView
+        android:id="@+id/tv_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/dimen_30px"
+        android:gravity="center"
+        android:padding="@dimen/dimen_20px"
+        android:text="@string/tip187"
+        android:textColor="@color/white2"
+        android:textSize="@dimen/dimen_36px" />
+</LinearLayout>

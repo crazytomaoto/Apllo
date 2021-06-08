@@ -1,0 +1,71 @@
+<resources>
+    <string name="app_start_name">NEX</string>
+    <string name="app_name">未来交易</string>
+    <string name="app_qd">確定</string>
+        
+    <string name="app_qx">取消</string>
+        
+    <string name="str_tab1">首頁</string>
+        
+    <string name="str_tab2">行情</string>
+        
+    <string name="str_tab3">交易</string>
+
+    <string name="str_tab4">我的</string>
+        
+    <string name="str_bccg">保存成功</string>
+        
+    <string name="str_bcsb">保存失敗</string>
+        
+    <string name="str_fsyzm">發送驗證碼</string>
+
+    <!--广告-->
+    <string-array name="array_advert">
+        <item>ubmcmm.baidustatic.com</item>
+        <item>cpro2.baidustatic.com</item>
+        <item>cpro.baidustatic.com</item>
+        <item>s.lianmeng.360.cn</item>
+        <item>nsclick.baidu.com</item>
+        <item>pos.baidu.com</item>
+        <item>cbjs.baidu.com</item>
+        <item>cpro.baidu.com</item>
+        <item>images.sohu.com/cs/jsfile/js/c.js</item>
+        <item>union.sogou.com/</item>
+        <item>sogou.com/</item>
+        <item>a.baidu.com</item>
+        <item>c.baidu.com</item>
+    </string-array>
+
+    <string name="str_fwqljyc">服務器連接異常</string>
+        
+    <string name="str_fzcg">複製成功</string>
+        
+    <string name="str_fzsb">複製失敗</string>
+
+
+        
+    <string name="str_sjh">手機號</string>
+        
+    <string name="str_qsrsjh">請輸入手機號</string>
+        
+    <string name="str_sjhm">手機號碼</string>
+        
+    <string name="str_qsrsjhm">請輸入手機號碼</string>
+        
+    <string name="str_sjhmgsbzq">手機號碼格式不正確</string>
+        
+    <string name="str_cdsyw">手機號長度應為11位</string>
+        
+    <string name="str_cdsyw2">手機號長度應為15位</string>
+        
+    <string name="str_pz">拍照</string>
+        
+    <string name="str_album">相冊</string>
+        
+    <string name="str_qx">取消</string>
+        
+    <string name="str_sfz">身份證</string>
+        
+    <string name="str_huzhao">護照</string>
+
+</resources>

@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ll_page"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_page_main"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <include layout="@layout/include_head_normal" />
+
+    <com.sz.apollo.ui.views.MyRefreshLayout
+        android:id="@+id/refreshLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:id="@+id/ll_data"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen_120px"
+                android:paddingLeft="45px"
+                android:paddingRight="45px">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginBottom="@dimen/dimen_24px"
+                    android:text="@string/tip85"
+                    android:textColor="@color/gray3"
+                    android:textSize="@dimen/dimen_35px" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginBottom="@dimen/dimen_24px"
+                    android:text="@string/tip86"
+                    android:textColor="@color/gray3"
+                    android:textSize="@dimen/dimen_35px" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginBottom="@dimen/dimen_24px"
+                    android:text="@string/tip87"
+                    android:textColor="@color/gray3"
+                    android:textSize="@dimen/dimen_35px" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="3px"
+                    android:layout_alignParentBottom="true"
+                    android:background="@color/color_line" />
+            </RelativeLayout>
+
+            <ListView
+                android:id="@+id/lv_data"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="45px"
+                android:layout_marginRight="45px"
+                android:divider="@color/color_line"
+                android:dividerHeight="3px"
+                android:scrollbars="none" />
+        </LinearLayout>
+    </com.sz.apollo.ui.views.MyRefreshLayout>
+
+    <include layout="@layout/layout_empty" />
+</LinearLayout>

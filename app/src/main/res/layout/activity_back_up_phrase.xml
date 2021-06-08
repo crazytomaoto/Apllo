@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_page_main"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <include layout="@layout/include_head_normal" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0px"
+        android:layout_marginLeft="@dimen/dimen_42px"
+        android:layout_marginTop="@dimen/dimen_90px"
+        android:layout_marginRight="@dimen/dimen_46px"
+        android:layout_marginBottom="95px"
+        android:layout_weight="1"
+        android:background="@drawable/radius_14_page_color_2"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dimen_46px"
+            android:layout_marginTop="86px"
+            android:layout_marginBottom="@dimen/dimen_60px"
+            android:text="@string/tip12"
+            android:textColor="@color/gray2"
+            android:textSize="@dimen/dimen_35px" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="3px"
+            android:layout_marginLeft="@dimen/dimen_46px"
+            android:layout_marginRight="@dimen/dimen_42px"
+            android:background="@color/color_line" />
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scrollbars="none">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <com.sz.apollo.ui.views.AutoGridView
+                    android:id="@+id/gv_phrase"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dimen_80px"
+                    android:layout_marginTop="@dimen/dimen_90px"
+                    android:layout_marginRight="@dimen/dimen_80px"
+                    android:horizontalSpacing="@dimen/dimen_40px"
+                    android:numColumns="3"
+                    android:scrollbars="none"
+                    android:verticalSpacing="@dimen/dimen_48px" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="3px"
+                    android:layout_marginLeft="@dimen/dimen_46px"
+                    android:layout_marginTop="102px"
+                    android:layout_marginRight="@dimen/dimen_42px"
+                    android:background="@color/color_line" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dimen_46px"
+                    android:layout_marginTop="@dimen/dimen_50px"
+                    android:text="@string/tip13"
+                    android:textColor="@color/gray2"
+                    android:textSize="@dimen/dimen_35px" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dimen_46px"
+                    android:layout_marginTop="@dimen/dimen_48px"
+                    android:layout_marginBottom="60dp"
+                    android:text="@string/tip14"
+                    android:textColor="@color/gray2"
+                    android:textSize="@dimen/dimen_35px" />
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_next"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_130px"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginLeft="36dp"
+        android:layout_marginTop="@dimen/dimen_70px"
+        android:layout_marginRight="36dp"
+        android:layout_marginBottom="53px"
+        android:background="@drawable/radius_60_green"
+        android:gravity="center"
+        android:text="@string/next"
+        android:textColor="@color/white"
+        android:textSize="@dimen/dimen_43px" />
+</LinearLayout>
